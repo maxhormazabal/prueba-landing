@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contenedor con Bootstrap 5</title>
+  <!-- Cargar Bootstrap desde CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .container {
+      height: 100vh; /* Altura del contenedor igual a la altura de la ventana */
+      display: flex; /* Usar flexbox para manejar las filas */
+      flex-direction: column; /* Columnas apiladas verticalmente */
+      justify-content: space-between; /* Distribuir el espacio verticalmente entre filas */
+    }
+    .row1 {
+      height: 20%; /* Altura de la primera fila del 20% del contenedor */
+      display: flex; /* Usar flexbox para los botones */
+      justify-content: center; /* Centrar horizontalmente los elementos */
+      align-items: center; /* Centrar verticalmente los elementos */
+    }
+    .row2 {
+      height: 80%; /* Altura de la segunda fila del 80% del contenedor */
+      display: flex; /* Usar flexbox para las columnas */
+      justify-content: space-around; /* Distribuir el espacio entre las columnas */
+    }
+    .col {
+      width: 50%; /* Ancho de cada columna del 50% */
+      display: flex; /* Usar flexbox para centrar contenido */
+      justify-content: center; /* Centrar horizontalmente el contenido de la columna */
+      align-items: center; /* Centrar verticalmente el contenido de la columna */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row row1 bg-light">
+      <div class="col">
+        <button type="button" class="btn btn-primary">Botón 1</button>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-secondary">Botón 2</button>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-success">Botón 3</button>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-danger">Botón 4</button>
+      </div>
+    </div>
+    <div class="row row2 bg-info">
+      <div class="col bg-warning">
+        <embed
+        src="http://infolab.stanford.edu/pub/papers/google.pdf#toolbar=0&navpanes=0&scrollbar=0"
+        type="application/pdf"
+        frameBorder="0"
+        scrolling="auto"
+        height="50%"
+        width="50%"
+    ></embed>
+      </div>
+      <div class="col bg-danger">
+        Contenido columna 2
+      </div>
+    </div>
+  </div>
+
+  <!-- Cargar Bootstrap y los scripts de JavaScript necesarios desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
